@@ -9,21 +9,29 @@ class meuHeroi {
         let ataque
         switch (this.tipoHeroi) {
             case 'mago':
-                ataque = 'usou magia'
+                ataque = 'usando magia'
                 break;
             case 'guerreiro':
-                ataque = 'usou magia'
+                ataque = 'usando espada'
                 break;
             case 'monge':
-                ataque = 'usou magia'
+                ataque = 'usando artes marciais'
                 break;
             case 'nija':
-                ataque = 'usou magia'
+                ataque = 'usando shuriken'
                 break;
             default:
+                ataque = 'usando ataque desconhecido'
                 break;
         }
-    }
 
+        console.log(`O ${this.tipoHeroi} atacou ${ataque}`)
+
+    }
+        
 }
+
+let ataqueHeroi = new meuHeroi("Kiko", 30, "mago")
+ataqueHeroi.atacar()
+
 
