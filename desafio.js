@@ -1,16 +1,29 @@
-class meuHeroi{
-	constructor(nomeHeroi, idadeHeroi, tipoHeroi){
-	  this.nomeHeroi = this.nomeHeroi
-	  this.idadeHeroi = this.idadeHeroi
-	  this.tipoHeroi = this.tipoHeroi
-	}
+class meuHeroi {
+    constructor(nomeHeroi, idadeHeroi, tipoHeroi) {
+        this.nomeHeroi = nomeHeroi
+        this.idadeHeroi = idadeHeroi
+        this.tipoHeroi = tipoHeroi
+    }
 
-	atacar(){
-	  console.log(`O ${this.tipoHeroi} atacou usando ${this.nomeHeroi}`)
-      }
+    atacar() {
+        let ataque
+        switch (this.tipoHeroi) {
+            case 'mago':
+                ataque = 'usou magia'
+                break;
+            case 'guerreiro':
+                ataque = 'usou magia'
+                break;
+            case 'monge':
+                ataque = 'usou magia'
+                break;
+            case 'nija':
+                ataque = 'usou magia'
+                break;
+            default:
+                break;
+        }
+    }
 
 }
 
-let ataque = new meuHeroi("mago", "magia")
-
-ataque.atacar()
